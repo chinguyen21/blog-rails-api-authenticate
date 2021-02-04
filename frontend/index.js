@@ -49,7 +49,7 @@ const createUser = () => {
                 form.classList.remove('show')
 
                 let h5= document.createElement('h5')
-                h5.innerText = "Succesfully create new account. Now you can see the message"
+                h5.innerText = "Now you can see the message"
                 document.querySelector('.message').appendChild(h5)
 
                 setTimeout(()=> showSecretMessage(), 2000);
@@ -90,7 +90,7 @@ const createUser = () => {
 //                 form.classList.remove('show')
 
 //                 let h5= document.createElement('h5')
-//                 h5.innerText = "Succesfully create new account. Now you can see the message"
+//                 h5.innerText = "Now you can see the message"
 //                 document.querySelector('.message').appendChild(h5)
 
 //                 setTimeout(()=> showSecretMessage(), 2000);

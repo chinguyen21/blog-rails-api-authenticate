@@ -56,3 +56,23 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 9ms (Views: 4.6ms | ActiveRecord: 1.0ms | Allocations: 1927)
 
 
+Started GET "/" for ::1 at 2021-02-04 14:54:37 -0500
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/frankienguyen/.rvm/gems/ruby-2.6.6/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/frankienguyen/.rvm/gems/ruby-2.6.6/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 11.5ms | Allocations: 309)
+Completed 200 OK in 29ms (Views: 21.7ms | ActiveRecord: 0.0ms | Allocations: 1778)
+
+
+Started GET "/users" for ::1 at 2021-02-04 14:54:41 -0500
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 696)
+
+
+  
+LoadError (cannot load such file -- bcrypt):
+  
+app/models/user.rb:5:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/users_controller.rb:5:in `index'
