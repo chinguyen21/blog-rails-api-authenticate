@@ -1,0 +1,33 @@
+#intro .header {
+		text-align: center;
+    font-size: 60px;
+		padding-top: 60px;
+		padding-bottom: 5px;
+		color: #0c0b0b;
+}
+
+.container {
+  margin: auto;
+  text-align: center;
+}
+
+#intro {
+  height: 700px;
+}
+#secret {
+  text-align: center;
+}
+
+#secret-message {
+  text-align: center;
+  color: blueviolet;
+}
+
+.message h5 {
+  color: red;
+  
+}
+
+#alert-wrong-pw {
+  color: red;
+}

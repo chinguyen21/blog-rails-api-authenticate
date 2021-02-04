@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rails API Authentication</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">    
+
+      
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  
+  </head>
+  <body>
+    <section id="intro" class="demo">
+     
+      <div class="header">
+        <h1>Welcome to My Page<h1>
+          <div class="message">
+            <h6 id="border">Sign up or log in to see the secret message below</h6>
+
+          </div>
+      </div>              
+      <div class="container">
+        <div id="main" class="row mt-4 d-flex">
+              <div class="col-sm mt-2">
+                <div class="eighty p-3">
+                  <a class="btn btn-primary" data-toggle="collapse" href="#create-form" role="button" aria-expanded="false" aria-controls="collapseFormButton">SIGN UP</a>
+                  <form id = 'create-form' class="ui1 form collapse multi-collapse">
+                    <div class="form-group">
+                      <input name="name" class="form-control mb-2" type="text"placeholder="Name">
+                      <input name="age" class="form-control mb-2" type="text"placeholder="Age">
+                      <input name="email" class="form-control mb-2" type="text"placeholder="Email">
+                      <input name="password" class="form-control mb-2" type="password"placeholder="Password">
+                      <input name="password_confirmation" class="form-control mb-2" type="password"placeholder="Password Confirmation">
+                      <input class="btn btn-primary" type="submit">
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="col-sm mt-2">
+                <div class="eighty p-3">
+                  <a class="btn btn-primary" data-toggle="collapse" href="#auth-form" role="button" aria-expanded="false" aria-controls="collapseFormButton">LOG IN</a>
+                  <form id="auth-form" class="ui2 form collapse multi-collapse">
+                    <div class="form-group">
+                      <input name="email" class="form-control mb-2" type="text"placeholder="Email">
+                      <input name="password" class="form-control mb-2" type="password"placeholder="Password">
+                      <input class="btn btn-primary" type="submit">
+                    </div>
+                  </form>
+                </div>
+              </div>
+          </div>
+        </div>
+    </section>
+
+    <section id="secret-message">
+        <h2></h2>
+    </section>
+
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
+
+
+
